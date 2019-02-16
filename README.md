@@ -1,6 +1,11 @@
-# Mathias’s dotfiles
+# Dave's Dotfiles
 
-![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
+This was originally set up from a repo found here: https://github.com/mathiasbynens/dotfiles
+
+TODO: 
+Add my .vim folder
+Add .bash_profile
+Add Tmux Settings
 
 ## Installation
 
