@@ -6,6 +6,7 @@ TODO:
 Add my .vim folder
 Add .bash_profile
 Add Tmux Settings
+ADD Alacritty Settings
 
 ## Installation
 
