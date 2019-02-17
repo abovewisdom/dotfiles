@@ -103,5 +103,10 @@ brew install tidy-html5
 brew install python
 brew install fasd
 brew install the_silver_searcher
+brew cask install alacritty
+brew install gzip
+#man page for alacritty
+sudo mkdir -p /usr/local/share/man/man1
+gzip -c alacritty.man | sudo tee /usr/local/share/man/man1/alacritty.1.gz > /dev/null
 # Remove outdated versions from the cellar.
 brew cleanup

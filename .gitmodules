@@ -1,0 +1,3 @@
+[submodule ".vim/vim-settings"]
+	path = .vim/vim-settings
+	url = https://github.com/abovewisdom/vim-settings.git
