@@ -3,9 +3,13 @@
 This was originally set up from a repo found here: https://github.com/mathiasbynens/dotfiles
 
 TODO: 
+
 Add my .vim folder
+
 Add .bash_profile DONE
+
 Add Tmux Settings DONE
+
 ADD Alacritty Settings
 
 ## Installation
