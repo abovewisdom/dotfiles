@@ -3,10 +3,12 @@ set -o vi
 
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;} history -n"
 
+export CLICOLOR=1
+export TERM=xterm-256color
 source /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.bash
 
 #alias for fdiff tool
-alias fdiff='/Users/davidflaten/.dotfiles/scripts/vd.sh'
+alias fdiff='~/.dotfiles/scripts/vd.sh'
 
 #Command to use fzf to jump to a directory
 alias cdf='cd $(dirname $)(fzf))'
