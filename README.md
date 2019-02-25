@@ -2,11 +2,22 @@
 
 This was originally set up from a repo found here: https://github.com/mathiasbynens/dotfiles
 
+## Known Issues
+1. When pulling .vim you don't get the submodules yet. Need to work this command in somehow: Update .vim so the submodules pull
+2. VIMRC file didn't update correctly.
+3. These errors show up when running the bootstrap script: 
+brew link python 2- 3
+Error: invalid option: --with-override-system-vi
+Error: invalid option: --with-iri
+
 ## Installation
+
+
+**Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
 I use "InputMonoCondensed" for my terminal font. you can download it from here, http://input.fontbureau.com/download/, if you don't you won't be able to launch Alacritty until you change the font in the settings file. 
 
-**Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
+Make sure you have brew installed and run brew.sh first. Then run the bootstrap script as described below.
 
 ### Using Git and the bootstrap script
 
