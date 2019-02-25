@@ -4,6 +4,8 @@ This was originally set up from a repo found here: https://github.com/mathiasbyn
 
 ## Installation
 
+I use "InputMonoCondensed" for my terminal font. you can download it from here, http://input.fontbureau.com/download/, if you don't you won't be able to launch Alacritty until you change the font in the settings file. 
+
 **Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
 ### Using Git and the bootstrap script
