@@ -27,13 +27,13 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
 fi;
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget 
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim 
 brew install grep
 
 
@@ -55,5 +55,9 @@ brew install gzip
 sudo mkdir -p /usr/local/share/man/man1
 gzip -c alacritty.man | sudo tee /usr/local/share/man/man1/alacritty.1.gz > /dev/null
 echo "source $(pwd)/alacritty-completions.bash" >> ~/.bashrc
+#pull down vim settings
+cd .vim
+git submodule init
+git submodule update
 # Remove outdated versions from the cellar.
 brew cleanup
