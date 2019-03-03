@@ -2,13 +2,15 @@
 
 This was originally set up from a repo found here: https://github.com/mathiasbynens/dotfiles
 
-## Known Issues
-1. When pulling .vim you don't get the submodules yet. Need to work this command in somehow: Update .vim so the submodules pull
-2. VIMRC file didn't update correctly.
-3. These errors show up when running the bootstrap script: 
-brew link python 2- 3
-Error: invalid option: --with-override-system-vi
-Error: invalid option: --with-iri
+### Install Homebrew formulae
+
+When setting up a new Mac, you may want to install some common [Homebrew](https://brew.sh/) formulae (after installing Homebrew, of course):
+
+```bash
+./brew.sh
+```
+
+Some of the functionality of these dotfiles depends on formulae installed by `brew.sh`. If you don’t plan to run `brew.sh`, you should look carefully through the script and manually install any particularly important ones. 
 
 ## Installation
 
@@ -57,20 +59,3 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
 ```bash
 ./.macos
 ```
-
-### Install Homebrew formulae
-
-When setting up a new Mac, you may want to install some common [Homebrew](https://brew.sh/) formulae (after installing Homebrew, of course):
-
-```bash
-./brew.sh
-```
-
-Some of the functionality of these dotfiles depends on formulae installed by `brew.sh`. If you don’t plan to run `brew.sh`, you should look carefully through the script and manually install any particularly important ones. A good example is Bash/Git completion: the dotfiles use a special version from Homebrew.
-
-## Thanks to…
-| [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/mathias "Follow @mathias on Twitter") |
-|---|
-| [Mathias Bynens](https://mathiasbynens.be/) |
-
-
