@@ -26,7 +26,7 @@ Make sure you have brew installed and run brew.sh first. Then run the bootstrap 
 You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-https://github.com/abovewisdom/dotfiles.git && cd dotfiles && source bootstrap.sh
+git init && git clone https://github.com/abovewisdom/dotfiles.git && cd dotfiles && git submodule init && git submodule update && ./brew.sh && source bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
