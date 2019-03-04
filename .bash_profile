@@ -8,7 +8,7 @@ export TERM=xterm-256color
 source /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.bash
 
 #alias for fdiff tool
-alias fdiff='~/.dotfiles/scripts/vd.sh'
+alias fdiff='~/.scripts/vd.sh'
 
 #Command to use fzf to jump to a directory
 alias cdf='cd $(dirname $)(fzf))'
