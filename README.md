@@ -51,6 +51,11 @@ Here’s an example `~/.path` file that adds `/usr/local/bin` to the `$PATH`:
 export PATH="/usr/local/bin:$PATH"
 ```
 
+In order to get the brew vim simlinked correctly you may need to grant access to the share folder using: 
+
+```bash
+sudo chown -R `whoami`:admin /usr/local/share
+```
 
 ### Sensible macOS defaults
 

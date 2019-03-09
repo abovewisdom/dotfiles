@@ -45,7 +45,6 @@ brew install bitwarden-cli
 brew install lua
 brew install tmux
 brew install tidy-html5
-brew install python
 brew install fasd
 brew install the_silver_searcher
 brew cask install alacritty
