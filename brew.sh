@@ -37,7 +37,6 @@ brew install vim
 brew install grep
 
 
-
 # Install other useful binaries.
 brew install ack
 brew install git
@@ -51,6 +50,9 @@ brew install fasd
 brew install the_silver_searcher
 brew cask install alacritty
 brew install gzip
+
+# Install pytest(unit tests for pip)(this may need some tweaking)
+pip install -U pytest
 #man page for alacritty
 sudo mkdir -p /usr/local/share/man/man1
 gzip -c alacritty.man | sudo tee /usr/local/share/man/man1/alacritty.1.gz > /dev/null
