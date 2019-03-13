@@ -26,8 +26,14 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
   chsh -s "${BREW_PREFIX}/bin/bash";
 fi;
 
-# Install `wget` with IRI support.
+# Install `wget`
 brew install wget 
+
+# Install zsh
+brew install zsh
+
+# Install ohmyzsh
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
@@ -56,9 +62,22 @@ pip install -U pytest
 sudo mkdir -p /usr/local/share/man/man1
 gzip -c alacritty.man | sudo tee /usr/local/share/man/man1/alacritty.1.gz > /dev/null
 echo "source $(pwd)/alacritty-completions.bash" >> ~/.bashrc
+# Completions for zsh in Alacitty
+mkdir -p ${ZDOTDIR:-~}/.zsh_functions
+echo 'fpath+=${ZDOTDIR:-~}/.zsh_functions' >> ${ZDOTDIR:-~}/.zshrc	
+cp alacritty-completions.zsh ${ZDOTDIR:-~}/.zsh_functions/_alacritty
 #pull down vim settings
 cd .vim
 git submodule init
 git submodule update
+cd ..
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
 # Remove outdated versions from the cellar.
 brew cleanup

@@ -2,7 +2,14 @@
 set -o vi
 
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;} history -n"
+#PS1 customization
+function nonzero_return() {
+	RETVAL=$?
+	[ $RETVAL -ne 0 ] && echo "$RETVAL"
+}
 
+export PS1="\w\`nonzero_return\`\\$ "
+#Bash customizations
 export CLICOLOR=1
 export TERM=xterm-256color
 source /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.bash
