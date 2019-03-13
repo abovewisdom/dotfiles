@@ -79,5 +79,15 @@ cd fonts
 # clean-up a bit
 cd ..
 rm -rf fonts
+#add folders for vim-force plugin
+cd ~
+mkdir tmp
+cd tmp
+mkdir apex
+mkdir truecrypt
+cd apex
+mkdir backup
+mkdir gvim-deployment
+cd ~
 # Remove outdated versions from the cellar.
 brew cleanup
