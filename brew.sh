@@ -42,7 +42,6 @@ brew install gnupg
 brew install vim 
 brew install grep
 
-
 # Install other useful binaries.
 brew install ack
 brew install git

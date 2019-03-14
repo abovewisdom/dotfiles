@@ -2,14 +2,14 @@
 set -o vi
 
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;} history -n"
-#PS1 customization
-function nonzero_return() {
-	RETVAL=$?
-	[ $RETVAL -ne 0 ] && echo "$RETVAL"
-}
+#PS1 settings
+export PS1="\u: \w > "
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+export GIT_PS1_SHOWCOLORHINTS=true
+#export PS1='\[\e[0;36m\]\[\e[0;36m\] \W\[\033[0;35m\]$(__git_ps1 " (%s)")\[\e[0m\]: '
 
-export PS1="\w\`nonzero_return\`\\$ "
-#Bash customizations
+#Color settings and keybindings
 export CLICOLOR=1
 export TERM=xterm-256color
 source /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.bash
@@ -54,3 +54,5 @@ if which brew &> /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_
 elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
+
+#alias vim = "vim -u ~/.vim/vimrc"

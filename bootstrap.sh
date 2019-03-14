@@ -13,7 +13,9 @@ function doIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
-	source ~/.bash_profile;
+	#Line below needs to be modified to run command in zsh shell instead of bash,
+	#should also make a script to update tmux when this is run.
+	#source ~/.zshrc;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
