@@ -13,18 +13,19 @@ function doIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
-	#Line below needs to be modified to run command in zsh shell instead of bash,
-	#should also make a script to update tmux when this is run.
-	#source ~/.zshrc;
+	source ~/.zshrc;
+	source ~/.tmux.conf;
 }
-
-if [ "$1" == "--force" -o "$1" == "-f" ]; then
-	doIt;
-else
-	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
-	echo "";
-	if [[ $REPLY =~ ^[Yy]$ ]]; then
-		doIt;
-	fi;
-fi;
+#Currently don't have force option working, will always override. 
+#if [ "$1" == "--force" -o "$1" == "-f" ]; then
+#	doIt;
+#else
+#	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
+#	echo "";
+#	if [[ $REPLY =~ ^[Yy]$ ]]; then
+#		doIt;
+#	fi;
+#fi;
+doIt;
 unset doIt;
+
