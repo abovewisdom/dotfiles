@@ -45,6 +45,7 @@ brew install grep
 # Install other useful binaries.
 brew install ack
 brew install git
+brew install tig
 brew install fzf
 brew install bitwarden-cli
 brew install lua
