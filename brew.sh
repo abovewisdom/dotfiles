@@ -40,13 +40,13 @@ brew install gnupg
 
 # Install more recent versions of some macOS tools.
 brew install vim 
-brew install grep
 
 # Install other useful binaries.
 brew install ack
 brew install git
 brew install tig
 brew install fzf
+brew install ripgrep
 brew install bitwarden-cli
 brew install lua
 brew install tmux
