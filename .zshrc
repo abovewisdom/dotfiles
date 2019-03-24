@@ -76,6 +76,7 @@ export TERM=xterm-256color
 plugins=(
 git
 vi-mode
+tig
 )
 
 source $ZSH/oh-my-zsh.sh
