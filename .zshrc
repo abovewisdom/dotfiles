@@ -1,4 +1,4 @@
-# Dave's settings
+#Dave's settings
 # vi mode settings, key time out increase
 bindkey -v
 export KEYTIMEOUT=1
@@ -8,7 +8,9 @@ export GPG_TTY=$(tty)
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+export PATH=/usr/local/lib/python3.7/site-packages:$PATH
+# Path for Pytest
+export PATH=/usr/local/Cellar/python/3.7.2_2/Frameworks/Python.framework/Versions/3.7/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -76,7 +78,6 @@ export TERM=xterm-256color
 plugins=(
 git
 vi-mode
-tig
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -108,6 +109,8 @@ source $ZSH/oh-my-zsh.sh
 #alias for fdiff tool
 alias fdiff='~/.scripts/vd.sh'
 #Command to use fzf to jump to a directory
-alias cdf='cd $(dirname $)(fzf))'
+alias fcd='~/.scripts/fcd.sh'
 # fzf keybindings
 source /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
