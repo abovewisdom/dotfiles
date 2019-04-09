@@ -20,7 +20,6 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
 DEFAULT_USER="davidflaten"
-prompt_context(){}
 #Color Scheme
 export TERM=xterm-256color
 # Set list of themes to pick from when loading at random
@@ -114,3 +113,5 @@ alias fcd='~/.scripts/fcd.sh'
 source /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#Removing machine name from prompt
+prompt_context(){}
