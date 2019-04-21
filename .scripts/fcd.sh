@@ -6,7 +6,7 @@ function fcd() {
         return
     fi
     while true; do
-        local lsd=$(echo ".." && ls -p | grep '/$' | sed 's;/$;;')
+        local lsd=$(echo ".." && ls -p | ripgrep '/$' | sed 's;/$;;')
         local dir="$(printf '%s\n' "${lsd[@]}" |
             fzf --reverse --preview '
                 __cd_nxt="$(echo {})";

@@ -110,8 +110,10 @@ alias fdiff='~/.scripts/vd.sh'
 #Command to use fzf to jump to a directory
 alias fcd='~/.scripts/fcd.sh'
 # fzf keybindings
-source /usr/local/Cellar/fzf/0.17.5/shell/key-bindings.zsh
+source /usr/local/Cellar/fzf/0.18.0/shell/key-bindings.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#Make fzf use ripgrep
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 #Removing machine name from prompt
 prompt_context(){}
