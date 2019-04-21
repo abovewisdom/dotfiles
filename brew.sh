@@ -42,10 +42,12 @@ brew install gnupg
 brew install vim 
 
 # Install other useful binaries.
-brew install ack
+brew install ctags
+#not sure I use this anymore brew install ack
 brew install git
 brew install tig
 brew install fzf
+brew install bat
 brew install ripgrep
 brew install bitwarden-cli
 brew install lua
