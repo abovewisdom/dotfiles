@@ -42,7 +42,7 @@ brew install gnupg
 brew install vim 
 
 # Install other useful binaries.
-brew install ctags
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 #not sure I use this anymore brew install ack
 brew install git
 brew install tig
