@@ -58,6 +58,10 @@ brew install the_silver_searcher
 brew cask install alacritty
 brew install gzip
 
+#Alacritty Themes Toggle Tool Install
+cp .tools/alacritty-colorscheme/alacritty-colorscheme /usr/local/bin
+#can toggle with line below(add this as command in future)
+#alacritty-colorscheme -C ~/.tools/alacritty-theme/themes -t solarized_light.yaml solarized_dark.yaml
 # Install pytest(unit tests for pip)(this may need some tweaking)
 pip install -U pytest
 #man page for alacritty
